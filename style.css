@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.gradient {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.gradient2 {
+    background-image: linear-gradient(190deg, hsla(241, 86%, 49%, 0.384), hsla(252, 79%, 64%, 0.2));
+}
+
+.divSize {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70%;
+    margin-bottom: 20%;
+}
+
+.largeFontSize {
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+}
+
+.header {
+    text-align: left;
+    color: black;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+#score {
+    color: hsl(0, 0%, 100%);
+    font-size: 4rem;
+    font-weight: 800;
+    margin: 0;
+}
+
+span {
+    font-family: 'Hanken Grotesk';
+}
+
+.scoreDetailedStart {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.scoreDetailedEnd {
+    color: hsla(222, 31%, 45%, 0.8);
+    font-weight: 800;
+}
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 16px -9px rgba(157, 157, 157, 1);
+    -moz-box-shadow: 10px 10px 16px -9px rgba(157, 157, 157, 1);
+    box-shadow: 10px 10px 16px -9px rgba(157, 157, 157, 1);
+}
+
+#underScore {
+    color: hsla(0, 0%, 100%, 0.637);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+P {
+    font-family: 'Hanken Grotesk';
+    color: hsla(0, 0%, 100%, 0.719);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+#scoreBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12rem;
+    height: 12rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.containerResult {
+    border-radius: 1.5rem;
+    background-color: white;
+    max-width: 50rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.containerFlex {
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerFlex2 {
+    max-height: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.containerGrid2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr 5fr;
+    padding: 1.3rem;
+    border-radius: 0.5rem;
+    justify-items: end;
+}
+
+.backgroundLightRed {
+    background-color: hsla(0, 100%, 67%, 0.15);
+}
+
+.backgroundOrangeyYellow {
+    background-color: hsla(39, 100%, 56%, 0.15);
+}
+
+.backgroundGreenTeal {
+    background-color: hsla(166, 100%, 37%, 0.15);
+}
+
+.backgroundCobaltBlue {
+    background-color: hsla(234, 85%, 45%, 0.15);
+}
+
+.lightRed {
+    color: hsla(0, 100%, 67%, 1);
+    font-weight: 900;
+}
+
+.orangeYellow {
+    color: rgb(233, 155, 11);
+    font-weight: 900;
+}
+
+.greenTeal {
+    color: hsla(166, 100%, 37%, 1);
+    font-weight: 900;
+}
+
+.cobaltBlue {
+    color: hsla(234, 85%, 45%, 1);
+    font-weight: 900;
+}
+
+.attribution {
+    padding-top: 2rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.button {
+    display: block;
+    font-size: 1rem;
+    font-family: 'Hanken Grotesk';
+    font-weight: 700;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: 1.5rem;
+}
+
+.button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+@media (max-width: 500px) {
+    body {
+        width: 100vw;
+        padding: 0;
+        margin: 0;
+        height: auto;
+    }
+    #score {
+        font-size: 3rem;
+    }
+  
+    #scoreBackground {
+        width: 10rem;
+        height: 10rem;
+
+    }
+    
+    .containerResult {
+
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .containerFlex{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .containerFlex2 {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .containerGrid2 {
+        margin-bottom: 1rem;
+        border-radius: 1rem;
+        justify-items: end;
+    }
+
+    .divSize {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2rem;
+    }
+    
+    .largeFontSize {
+        margin: 1rem;
+        color: hsl(0, 0%, 100%);
+        font-size: 2rem;
+    }
+}
